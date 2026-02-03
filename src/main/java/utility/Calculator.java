@@ -1,0 +1,31 @@
+package utility;
+
+/**
+ * Simple Calculator 
+ * 
+ * @author Tim Hoch
+ * @version 1.0
+ * 
+ * 
+ * 
+ */
+
+public class Calculator {
+	
+	/**
+	 * Adds two integers
+	 * 
+	 * 
+	 * @param a integer 1
+	 * @param b integer 2
+	 * @return sum of a and b
+	 * 
+	 */
+	
+	public static int addition(int a, int b) {
+		
+		int c = a + b;
+		return c;	
+	}
+
+}
