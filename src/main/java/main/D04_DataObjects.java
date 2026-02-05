@@ -43,8 +43,20 @@ public class D04_DataObjects {
 		/* Unveränderliche Datenobjekte */
 		final String text = "Java";
 //		 text = "Python"; Funktioniert nicht da text final ist
+		
+		/* Sichtbarkeit von Datenobjekten */
+//		i = 8; geht nicht da die Methode die Variable i nicht kennt
+//		x = 3;
+		System.out.println(PI);
 
 
+	}
+	
+	public static void doSomething(int x) {
+		int i = 5;
+		System.out.println(i);
+		System.out.println(PI);
+		
 	}
 
 }
