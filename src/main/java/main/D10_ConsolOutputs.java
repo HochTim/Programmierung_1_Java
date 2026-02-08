@@ -16,6 +16,7 @@ public class D10_ConsolOutputs {
 
 		/* printf-Methoden */
 		// Aufbau einer Formatierungsregel:
+		
 		// %[flags][width][.precision]conversion-character
 
 		// String-Formatierung (conversion-character s)
