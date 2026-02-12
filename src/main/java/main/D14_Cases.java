@@ -9,6 +9,8 @@ public class D14_Cases {
 
 		System.out.print("Bitte gib \"r\", \"g\" oder \"b\" ein: ");
 		char color = scanner.next().charAt(0);
+		
+		//if-else Leiter
 
 		String colorText;
 		if (color == 'r' || color == 'R') {
@@ -21,6 +23,8 @@ public class D14_Cases {
 			colorText = "";
 		}
 		System.out.println(colorText);
+		
+		//switch case
 
 		switch (color) {
 		case 'r':
@@ -38,8 +42,12 @@ public class D14_Cases {
 		default:
 			colorText = "";
 		}
+		
+		  
 
 		System.out.println(colorText);
+		
+		//switch case Kurzschreibweise
 		
 		colorText = switch (color) {
 		case 'r', 'R' -> "rot";
