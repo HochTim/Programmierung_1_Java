@@ -14,9 +14,9 @@ public class D21_Objects {
 		
 		i = 5;
 		light1 = new TableLight();
-		LightBulb redlLightBulb = new LightBulb();
+//		LightBulb redlLightBulb = new LightBulb(); Version2
 //		redlLightBulb.color = "rot"; Version1
-		light1.changeLightBulp(redlLightBulb);
+//		light1.changeLightBulp(redlLightBulb); Version2
 		
 		int x = i;
 		TableLight light2 = light1;

@@ -7,13 +7,13 @@ public class D23_DataEncapsulation {
 
 	public static void main(String[] args) {
 		
-		LightBulb redLightBulb = new LightBulb();
-		redLightBulb.setColor("rot");
+//		LightBulb redLightBulb = new LightBulb(); Version1
+//		redLightBulb.setColor("rot"); Version1
 		
 		TableLight light1 = new TableLight();
 		light1.switchOn();
 		light1.plugIn();
-		light1.changeLightBulp(redLightBulb);
+//		light1.changeLightBulp(redLightBulb); Version1
 		
 		System.out.println(light1.isShining());
 		System.out.println(light1.getLightBulb().getColor());
