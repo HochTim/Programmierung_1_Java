@@ -5,10 +5,8 @@ import model.ObjectOrientation1_Vehicles;
 public class ObjectOrienting01_Vehicles {
 	
 	public static void main(String[] args){
-		ObjectOrientation1_Vehicles vehicle = new ObjectOrientation1_Vehicles();
-		
-		vehicle.setMake("Koenigsegg");
-		vehicle.setModel("Jesko");
+		System.out.println(ObjectOrientation1_Vehicles.getNumberOfVehicles());
+		ObjectOrientation1_Vehicles vehicle = new ObjectOrientation1_Vehicles("Koenigsegg","Jesko");
 		
 		vehicle.accelerate(100);
 		vehicle.accelerate(286);
@@ -18,6 +16,8 @@ public class ObjectOrienting01_Vehicles {
 		double speed = vehicle.getSpeedInKmh();
 		
 		System.out.println(speed);
+		System.out.println(vehicle);
+		System.out.println(ObjectOrientation1_Vehicles.getNumberOfVehicles());
 
 	}
 

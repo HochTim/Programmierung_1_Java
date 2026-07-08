@@ -2,18 +2,16 @@ package model;
 
 public class ObjectOrientation1_Vehicles {
 		
-		private String make, model;
-		
-		private String makeModel = make + model;
+		private final String make, model;
 		
 		private double speedInKmh;
 		
-		public void setMake(String make){
-			this.make = make;
-		}
+		private static int numberOfVehicles = 0;
 		
-		public void setModel(String  model){
+		public ObjectOrientation1_Vehicles(String make, String model) {
+			this.make = make;
 			this.model = model;
+			numberOfVehicles++;
 		}
 		
 		public String getMake(){
@@ -38,8 +36,13 @@ public class ObjectOrientation1_Vehicles {
 		System.out.println("Bremsen auf: " + speedInKmh +"Kmh");
 		}
 		
+		@Override
 		public String toString(){
-		return makeModel;
+		return "Vehicle: Hersteller=" + make +" Model="+ model;
+		}
+		
+		public static int getNumberOfVehicles() {
+			return numberOfVehicles;
 		}
 		
 		

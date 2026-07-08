@@ -1,9 +1,8 @@
 package model;
 
-public class TableLight {
+public final class TableLight extends Light implements Wired_Devices {
 
 	private boolean isConnected;
-	private boolean isOn;
 	private LightBulb lightBulb;
 	private final PlugType plugType;
 
@@ -21,21 +20,17 @@ public class TableLight {
 		this.lightBulb = lightBulb;
 		numberOfTableLights++;
 	}
-
-	public void plugIn() {
+@Override
+	public void plugIn() throws AlredyPluggedInException{
+	if (isConnected) {
+		throw new AlredyPluggedInException();
+	}
 		isConnected = true;
 	}
 
+@Override
 	public void pullThePlug() {
 		isConnected = false;
-	}
-
-	public void switchOn() {
-		isOn = true;
-	}
-
-	public void switchOff() {
-		isOn = false;
 	}
 
 	public LightBulb changeLightBulp(LightBulb newLightBulp) {
@@ -44,7 +39,7 @@ public class TableLight {
 
 		return oldLightBulp;
 	}
-
+	@Override
 	public boolean isShining() {
 
 		if (isConnected == true && isOn == true && lightBulb != null) { /* isConnected reicht aus == unnötig */
@@ -57,10 +52,6 @@ public class TableLight {
 
 	public boolean isConnected() {
 		return isConnected;
-	}
-
-	public boolean isOn() {
-		return isOn;
 	}
 
 	public LightBulb getLightBulb() {

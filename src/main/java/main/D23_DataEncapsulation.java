@@ -1,11 +1,12 @@
 package main;
 
+import model.AlredyPluggedInException;
 import model.LightBulb;
 import model.TableLight;
 
 public class D23_DataEncapsulation {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws AlredyPluggedInException {
 		
 //		LightBulb redLightBulb = new LightBulb(); Version1
 //		redLightBulb.setColor("rot"); Version1

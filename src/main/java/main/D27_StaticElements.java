@@ -1,10 +1,11 @@
 package main;
 
+import model.AlredyPluggedInException;
 import model.TableLight;
 
 public class D27_StaticElements {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws AlredyPluggedInException {
 		
 		int numberOfTableLights = TableLight.getNumberOfTableLights();
 		System.out.println(numberOfTableLights);

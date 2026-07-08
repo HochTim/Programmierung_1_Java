@@ -1,11 +1,12 @@
 package main;
 
+import model.AlredyPluggedInException;
 import model.LightBulb;
 import model.TableLight;
 
 public class D20_Classes {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws AlredyPluggedInException {
 
 //		LightBulb redLightBulp = new LightBulb(); Version 2
 //		redLightBulp.color = "rot"; Version1

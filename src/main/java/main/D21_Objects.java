@@ -2,12 +2,13 @@ package main;
 
 import java.time.chrono.IsoChronology;
 
+import model.AlredyPluggedInException;
 import model.LightBulb;
 import model.TableLight;
 
 public class D21_Objects {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws AlredyPluggedInException {
 		
 		int i = 0;
 		TableLight light1 = null;
