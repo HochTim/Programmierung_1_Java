@@ -26,5 +26,9 @@ public class Movie implements Comparable<Movie>{
 	public void incrementRating() {
 		raiting += 0.1;
 	}
+	
+	public double getRaiting() {
+		return raiting;
+	}
 
 }

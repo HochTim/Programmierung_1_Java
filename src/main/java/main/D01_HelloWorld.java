@@ -9,6 +9,11 @@ public class D01_HelloWorld {
 		
 		/* Ausgabe */		
 		System.out.println(text);
+		
+		String[] s = {"dsfa", "dfsfa"};
+		
+		System.out.println(s[0]);
+		
 
 	}
 

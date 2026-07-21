@@ -93,6 +93,8 @@ public class D37_InnerClasses {
 		
 		movies.forEach(m -> m.incrementRating());
 		movies.forEach(Movie::incrementRating);
+		
+		movies.sort(Comparator.comparing(m -> m.getRaiting()));
 
 	}
 	

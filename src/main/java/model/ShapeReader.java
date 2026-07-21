@@ -21,6 +21,7 @@ public class ShapeReader {
 		while (scanner.hasNextLine()) {
 			String line = scanner.nextLine();
 			String[] tokens = line.split(";");
+			
 
 			String shapeType = tokens[0];
 			double aInCm = Double.parseDouble(tokens[1]);
